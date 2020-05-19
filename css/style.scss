@@ -19,7 +19,7 @@ html,body{margin:0;padding:0; font-family: Lato;}
 	display: flex; 
 	justify-content: space-between;
 	.logotype{
-	margin: 18px 20px 20px 0px;
+	margin: 30px 20px 20px 5px;
 	}
 }
 
@@ -28,7 +28,7 @@ html,body{margin:0;padding:0; font-family: Lato;}
 .button-exit{
 	 background:none;
 	 border:0;
-	 color: #69d;
+	 color: #4185F7;
 	 margin: 15px 0px 20px 15px;
 	 height: 50px;
 	 width: 200px;
@@ -54,7 +54,8 @@ html,body{margin:0;padding:0; font-family: Lato;}
 }
 
 .main-content{
-	border-radius: 20px;
+	box-shadow: 0px 4px 60px rgba(65, 133, 247, 0.05);
+	border-radius: 8px;
 	padding-top: 12px;
 	background-color: #fff;
 	max-height: 100%;
@@ -64,15 +65,22 @@ html,body{margin:0;padding:0; font-family: Lato;}
 	margin-top: 50px;
 	font-size: 22px;
 	text-align: center;
+	font-style:normal;
+	font-weight: bold;
 }
 
 .name-main-content{
+
+	font-style: normal;
+	font-weight: normal;
+	color: #383E48;
 	font-size: 14px;
-	color: gray;
-	font-weight: 400;
-	text-align: center;
+	line-height: 17px;
+	vertical-align: top;
+	text-align:center;
 	object{
-	height: 10px;
+	height: 16px;
+	width:14px;
 	margin-right: 10px;
 	}
 }
@@ -80,8 +88,8 @@ html,body{margin:0;padding:0; font-family: Lato;}
 	text-align: left;
 	margin-top: 30px;
 	font-size: 18px;
-	padding-left:50px;
-	padding-right:50px;
+	padding-left:40px;
+	padding-right:40px;
 }
 
 .password-form-container{
@@ -100,25 +108,27 @@ html,body{margin:0;padding:0; font-family: Lato;}
 		font-size: 16px;
 		line-height: 28px;
 		vertical-align: middle;
+
 		}
 		input{
 		outline: none;
 		height: 30px;
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
+		border-top-left-radius:  100px;
+		border-bottom-left-radius: 100px;
 		margin: 0;
 		border: 1px solid gray;
 		padding-left: 10px;
 		&:hover, active{outline: none;}
+
 		}
 		.enter-button{
-		width: 100px;
+		width: 120px;
 		outline: none;
 		height: 34px;
 		background-color: #4383ff;
 		border:0;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
+		border-top-right-radius:  100px;
+		border-bottom-right-radius:  100px;
 		margin: 0;
 		color: #fff;
 		&:hover{
@@ -126,11 +136,12 @@ html,body{margin:0;padding:0; font-family: Lato;}
 		}
 		}
 		object{
-		height: 20px;
+		height: 12px;
+		width:18px;
 		}
 		.eye-button{
 		margin-left: -35px;
-		margin-top: 6px;
+		margin-top: 10px;
 		border:0;
 		z-index: 2;
 		position: absolute;
@@ -148,29 +159,35 @@ html,body{margin:0;padding:0; font-family: Lato;}
 
 
 /*responsive css*/
-@media (max-width: 600px) {
+@media (max-width: 732px) {
+body{padding-left:10px;padding-right:10px;}}
+@media (max-width: 651px) {
+
 .main-content{
 	height:initial;}
 
 .password-form-container{
+
 .password-form-blocks{
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	}
- span{  margin-right: 0;}
+ span{  margin-right: 0;margin-left:-180px; }
  input{
- 	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+
+ 	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
 	margin-top: 10px;
 	}
 .enter-button{
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	width: 250px;
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+	width:370px;
 	margin-top: 10px;
 	}
-.eye-button{margin-top: 15px;}
+.eye-button{margin-top: 20px;}
 }
 }

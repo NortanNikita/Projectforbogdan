@@ -17,12 +17,12 @@ html, body {
   display: flex;
   justify-content: space-between; }
   .header .logotype {
-    margin: 18px 20px 20px 0px; }
+    margin: 30px 20px 20px 5px; }
 
 .button-exit {
   background: none;
   border: 0;
-  color: #69d;
+  color: #4185F7;
   margin: 15px 0px 20px 15px;
   height: 50px;
   width: 200px;
@@ -45,7 +45,8 @@ html, body {
   outline: none; }
 
 .main-content {
-  border-radius: 20px;
+  box-shadow: 0px 4px 60px rgba(65, 133, 247, 0.05);
+  border-radius: 8px;
   padding-top: 12px;
   background-color: #fff;
   max-height: 100%;
@@ -54,23 +55,29 @@ html, body {
 .title-main-content {
   margin-top: 50px;
   font-size: 22px;
-  text-align: center; }
+  text-align: center;
+  font-style: normal;
+  font-weight: bold; }
 
 .name-main-content {
+  font-style: normal;
+  font-weight: normal;
+  color: #383E48;
   font-size: 14px;
-  color: gray;
-  font-weight: 400;
+  line-height: 17px;
+  vertical-align: top;
   text-align: center; }
   .name-main-content object {
-    height: 10px;
+    height: 16px;
+    width: 14px;
     margin-right: 10px; }
 
 .text-main-content {
   text-align: left;
   margin-top: 30px;
   font-size: 18px;
-  padding-left: 50px;
-  padding-right: 50px; }
+  padding-left: 40px;
+  padding-right: 40px; }
 
 .password-form-container {
   border-bottom-right-radius: 20px;
@@ -90,30 +97,31 @@ html, body {
   .password-form-container input {
     outline: none;
     height: 30px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
     margin: 0;
     border: 1px solid gray;
     padding-left: 10px; }
     .password-form-container input:hover, .password-form-container input active {
       outline: none; }
   .password-form-container .enter-button {
-    width: 100px;
+    width: 120px;
     outline: none;
     height: 34px;
     background-color: #4383ff;
     border: 0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
     margin: 0;
     color: #fff; }
     .password-form-container .enter-button:hover {
       cursor: pointer; }
   .password-form-container object {
-    height: 20px; }
+    height: 12px;
+    width: 18px; }
   .password-form-container .eye-button {
     margin-left: -35px;
-    margin-top: 6px;
+    margin-top: 10px;
     border: 0;
     z-index: 2;
     position: absolute;
@@ -124,7 +132,11 @@ html, body {
       outline: none; }
 
 /*responsive css*/
-@media (max-width: 600px) {
+@media (max-width: 732px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media (max-width: 651px) {
   .main-content {
     height: initial; }
 
@@ -134,17 +146,18 @@ html, body {
     justify-content: center;
     align-items: center; }
   .password-form-container span {
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: -180px; }
   .password-form-container input {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
     margin-top: 10px; }
   .password-form-container .enter-button {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 250px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 370px;
     margin-top: 10px; }
   .password-form-container .eye-button {
-    margin-top: 15px; } }
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
